@@ -4,11 +4,13 @@ public class RentCalculatorForHRADeclaration {
 
     public static void main(String[] args) {
 
-        double actual_hra_received = 40832 * 12.0;
-        double basic_ka_40 = 102280 * 12 * .4;
+        /*double hra_monthly = 40832;
+        double basic_salary_monthly = 102080;
+        double rent_paid_monthly = 40000;
 
-        System.out.println("actual_hra_received::" + actual_hra_received);
+        System.out.println("HRA_received::" + actual_hra_received);
         System.out.println("basic_ka_40::" + basic_ka_40);
+        System.out.println("Actual rent paid::"+ actual_rent_paid);
 
         double actual_rent_paid = 0.0;
         double max_hra_exemption = Integer.MIN_VALUE;
@@ -22,7 +24,7 @@ public class RentCalculatorForHRADeclaration {
             }
         }
         System.out.println(max_hra_exemption);
-        System.out.println(max_rent);
+        System.out.println(max_rent);*/
 
     }
 }

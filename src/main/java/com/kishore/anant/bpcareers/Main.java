@@ -1,6 +1,4 @@
 package com.kishore.anant.bpcareers;
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
-import jdk.nashorn.internal.runtime.regexp.JoniRegExp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
