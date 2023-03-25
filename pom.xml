@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kishore.anant</groupId>
     <artifactId>somerandomcode</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>Some Random code snippets, problem-solving practice set, some completed and most unfinished </name>
 
     <properties>
