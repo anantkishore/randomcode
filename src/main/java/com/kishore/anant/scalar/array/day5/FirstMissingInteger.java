@@ -1,6 +1,4 @@
-package com.kishore.anant.scalar.array;
-
-import java.util.Arrays;
+package com.kishore.anant.scalar.array.day5;
 
 public class FirstMissingInteger {
 
@@ -19,35 +17,13 @@ public class FirstMissingInteger {
         result = firstMissingPositive(arr3);
         System.out.println(result);
     }
-    /* 3,4,-1,1
-
-     */
-
-    public int firstMissingPositive(int[] A) {
-
-        int n = A.size();
-        for(int i=0; i < n; i++){
-            int num = arr[i];
-            if(num > 0 && num <=n && arr[num-1] != num) {
-                Collections.swap(arr, i, num-1);
-                i--;
-            }
-        }
-        int start = 1;
-        for (int i=0; i < n; i++){
-            if(arr[i] != start){
-                return i+1;
-            }
-            start++;
-        }
-        return n+1;
-    }
-
     private static int firstMissingPositive(int[] arr) {
 
         int n = arr.length;
         for(int i=0; i < n; i++){
             int num = arr[i];
+            // We traverse the array, and if A[i] is in [1, N] range,
+            // we try to put in the index of same value in the array.
             if(num > 0 && num <=n && arr[num-1] != num) {
                 swap(arr, i, num-1);
                 i--;
