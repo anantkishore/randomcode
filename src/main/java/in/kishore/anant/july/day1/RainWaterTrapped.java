@@ -13,7 +13,7 @@ public class RainWaterTrapped {
     }
 
     private static int findTotalRainWaterTrapped(int[] arr) {
-        int l = 0, r = n-1, leftMax = 0, rightMax = 0, result = 0;
+        int l = 0, r = arr.length-1, leftMax = 0, rightMax = 0, result = 0;
 
         while (l <= r) {
             if (arr[l] <= arr[r]) {
