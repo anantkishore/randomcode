@@ -22,8 +22,11 @@ public class FirstMissingInteger {
         int n = arr.length;
         for(int i=0; i < n; i++){
             int num = arr[i];
-            // We traverse the array, and if A[i] is in [1, N] range,
-            // we try to put in the index of same value in the array.
+            /*
+                1. swap the item to it's correct position
+                2. Fix swapped item to it's correct position by not incrementing the index
+                3. run the scan to find item not present in it's position
+             */
             if(num > 0 && num <=n && arr[num-1] != num) {
                 swap(arr, i, num-1);
                 i--;

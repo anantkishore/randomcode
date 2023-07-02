@@ -35,9 +35,9 @@ public class RepeatAndMissingNumberArray {
             sumSquares += Math.pow(i,2);
         }
         long totalSum = ((long) n *(n+1))/2;
-        long totalSqauresSum =
 
-        return [x,y];
+
+        return null;
     }
 }
 
